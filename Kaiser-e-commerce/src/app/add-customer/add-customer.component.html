@@ -1,17 +1,29 @@
  <h1>Enter Your Details</h1>
-<Label class="text-primary text-bold" style="font-size: 20px;">First Name</Label>
-<input type="text" name="first-name">
-<Label class="text-primary text-bold" style="font-size: 20px;">Last Name</Label>
-<input type="text" name="last-name">
-<br>
-<Label class="text-primary text-bold" style="font-size: 20px;">User Name</Label>
-<input type="text" name="user">
-<Label class="text-primary text-bold" style="font-size: 20px;">Password</Label>
-<input type="password" name="pass">
-<br>
-<Label class="text-primary text-bold" style="font-size: 20px;">Mobile Number</Label>
-<input type="number" name="cell">
-<Label class="text-primary text-bold" style="font-size: 20px;">Email id</Label>
-<input type="text" name="email">
-<br><br>
-<button type="submit">Submit</button>
+<div>
+    <form #newUserRef="ngForm" (ngSubmit)="registerUser(newUserRef.value)">
+        <Label class="text-primary text-bold" style="font-size: 20px;">First Name</Label>
+            <input type="text" name="first-name" ngmodel>
+        <Label class="text-primary text-bold" style="font-size: 20px;">Last Name</Label>
+            <input type="text" name="last-name" ngmodel>
+        <br>
+        
+        <Label class="text-primary text-bold" style="font-size: 20px;">User Name</Label>
+            <input type="text" name="user" ngmodel>
+        <Label class="text-primary text-bold" style="font-size: 20px;">Password</Label>
+            <input type="password" name="pass" ngmodel>
+        <br>
+        
+        <Label class="text-primary text-bold" style="font-size: 20px;">Mobile Number</Label>
+            <input type="number" name="cell" ngmodel>
+        <Label class="text-primary text-bold" style="font-size: 20px;">Email id</Label>
+            <input type="text" name="email" ngmodel>
+        <br><br>
+        
+        <input type="submit" value="submit">
+        
+        <button class="nav-item nav-link-edit" [routerLink]="['/signin']">Back</button >
+    
+        <!-- <input type="button" value="Back" action="home"/> -->
+    
+    </form>
+</div>

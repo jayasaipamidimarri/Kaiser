@@ -1,13 +1,17 @@
-<div>
-    <form #userRef="ngForm" ngSubmit="checkUser(userRef.value)">
-    <label>Username</label>
-    <input type="text" name="user" ngModel><br/>
-    <label>Password</label>
-    <input type="password" name="pass" autocomplete="on" ngModel><br/>
-    <!-- <input type="submit" value="submit"/> -->
-    <button type="submit">Submit</button>
-    <input type="reset" value="reset"/>
+<div class="container">
+    <div>
+        <form #userRef="ngForm" (ngSubmit)="checkUser(userRef.value)">
+        <label>Username</label>
+        <input type="text" name="user" ngModel><br/>
+        <label>Password</label>
+        <input type="password" name="pass" autocomplete="on" ngModel><br/>
+        <input type="submit" value="submit"/>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="reset" value="reset"/>
+            {{msg}}
     </form>
-<p><a href="add-customer">New User</a> <a href="home">back</a></p>
-
+        
+    <p><a href="add-customer">New User</a> <a href="home">back</a></p>
+    
+    </div>
 </div>

@@ -12,5 +12,10 @@ export class AddCustomerComponent implements OnInit {
 
   ngOnInit() {
   }
+  registerUser(newUserRef:any)
+  {
+    console.log("Registration Successfull")
+    this.router.navigate(["signin"]);
+  }
 
 }

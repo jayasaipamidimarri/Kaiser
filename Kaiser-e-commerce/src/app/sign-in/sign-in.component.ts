@@ -17,10 +17,10 @@ export class SignInComponent implements OnInit {
   {
     let user=userRef.user;
     let pass=userRef.pass;
-    console.log("checking user")
     if(user=="jai" && pass=="123")
     {
       console.log("Login Successfull")
+      console.log(user)
       sessionStorage.setItem("name",user);
       this.router.navigate(["a"])
     }

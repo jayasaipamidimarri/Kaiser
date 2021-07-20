@@ -10,7 +10,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { MyGaurds } from './app.guard';
 import { FormsModule } from '@angular/forms';
 import { AComponent } from './a/a.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,7 @@ import { AComponent } from './a/a.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule
-  ],
+    AppRoutingModule,FormsModule,HttpClientModule  ],
   providers: [MyGaurds],
   bootstrap: [AppComponent]
 })
