@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { MyGaurds } from './app.guard';
+import { FormsModule } from '@angular/forms';
+import { AComponent } from './a/a.component';
 
 
 @NgModule({
@@ -14,13 +17,14 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     HomeComponent,
     AddCustomerComponent,
-    SignInComponent
+    SignInComponent,
+    AComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
-  providers: [],
+  providers: [MyGaurds],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

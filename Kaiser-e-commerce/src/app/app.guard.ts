@@ -11,7 +11,7 @@ export class MyGaurds implements CanActivate
         let obj=sessionStorage.getItem("name");
         if(obj==null)
         {
-            this.router.navigate(["login"]);
+            this.router.navigate(["a"]);
             return false;
         }
         else

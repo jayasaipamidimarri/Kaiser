@@ -10,17 +10,19 @@ export class SignInComponent implements OnInit {
   msg:string=""
   constructor(public router:Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  checkUser(userRef:any){
+  checkUser(userRef:any)
+  {
     let user=userRef.user;
     let pass=userRef.pass;
-    if(user=="Jai" && pass=="123")
+    console.log("checking user")
+    if(user=="jai" && pass=="123")
     {
       console.log("Login Successfull")
       sessionStorage.setItem("name",user);
-      this.router.navigate(["home"])
+      this.router.navigate(["a"])
     }
     else
     {
@@ -28,5 +30,4 @@ export class SignInComponent implements OnInit {
       this.msg="Username or password not found";
     }
   }
-
 }
