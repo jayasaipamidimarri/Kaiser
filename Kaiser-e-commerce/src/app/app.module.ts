@@ -8,9 +8,16 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { MyGaurds } from './app.guard';
-import { FormsModule } from '@angular/forms';
-import { AComponent } from './a/a.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AdminComponent } from './admin/admin.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
+import { DeleteProductComponent } from './delete-product/delete-product.component';
+import { ViewUsersComponent } from './view-users/view-users.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -18,12 +25,18 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     AddCustomerComponent,
     SignInComponent,
-    AComponent
+    UserDashboardComponent,
+    AdminComponent,
+    NotfoundComponent,
+    AddProductComponent,
+    UpdateProductComponent,
+    DeleteProductComponent,
+    ViewUsersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,HttpClientModule  ],
-  providers: [MyGaurds],
+    AppRoutingModule,FormsModule,HttpClientModule,ReactiveFormsModule  ],
+  providers: [MyGaurds,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

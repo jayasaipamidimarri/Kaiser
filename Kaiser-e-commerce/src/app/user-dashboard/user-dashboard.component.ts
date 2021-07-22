@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-a',
-  templateUrl: './a.component.html',
-  styleUrls: ['./a.component.css']
+  selector: 'app-user-dashboard',
+  templateUrl: './user-dashboard.component.html',
+  styleUrls: ['./user-dashboard.component.css']
 })
-export class AComponent implements OnInit {
+export class UserDashboardComponent implements OnInit {
   userName:string=""
   constructor(public router:Router) { }
 
@@ -21,4 +21,5 @@ export class AComponent implements OnInit {
     sessionStorage.removeItem("name");
     this.router.navigate(["signin"]);
   }
+
 }

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a> 
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="userdashboard">Home <span class="sr-only">(user dashboard)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="view-all-users">Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="addproduct">add product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="updateproduct">Update product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="deleteproduct">Delete product</a>
+      </li>
+    </ul>
+    <div align=right>
+      <input  type="button" value="Logout" (click)="logout()">
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<!-- <h3>Hola {{name}}</h3> -->

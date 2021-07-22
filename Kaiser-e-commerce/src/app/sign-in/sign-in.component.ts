@@ -22,7 +22,14 @@ export class SignInComponent implements OnInit {
       console.log("Login Successfull")
       console.log(user)
       sessionStorage.setItem("name",user);
-      this.router.navigate(["a"])
+      this.router.navigate(["userdashboard"])
+    }
+    else if(user=="admin" && pass=="admin")
+    {
+      console.log("Login Successfull")
+      console.log(user)
+      sessionStorage.setItem("name",user);
+      this.router.navigate(["admindashboard"])
     }
     else
     {

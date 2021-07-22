@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "jai sai",
+      "lname": "pamidimarri",
+      "password": "123",
+      "mobile": "7671922818",
+      "email": "jayasaipamidimarri@gmail.com"
+    },
+    {
+      "id": 2,
+      "fname": "surya",
+      "lname": "pamidimarri",
+      "password": "12345",
+      "mobile": "7671922819",
+      "email": "pjssgk@gmail.com"
+    },
+    {
+      "fname": "Pamidimarri Jaya Sai Surya",
+      "lname": "Krishna",
+      "email": "jayasaipamidimarri@gmail.com",
+      "password": "123457",
+      "mobile": "+917671922818",
+      "address": "6b-1-24",
+      "id": 3
+    },
+    {
+      "fname": "Veccha Siva",
+      "lname": "Yamini",
+      "email": "vssyamini11299@gmail.com",
+      "password": "123456",
+      "mobile": "+918247315059",
+      "address": "Tangellamudi",
+      "id": 4
+    }
+  ]
+}
