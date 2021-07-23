@@ -33,6 +33,62 @@
       "mobile": "+918247315059",
       "address": "Tangellamudi",
       "id": 4
+    },
+    {
+      "fname": "Pamidimarri Jaya Sai Surya",
+      "lname": "Krishna",
+      "email": "jayasaipamidimarri@gmail.com",
+      "password": "123",
+      "mobile": "+917671922818",
+      "address": "6b-1-24",
+      "id": 5
+    },
+    {
+      "fname": "Pamidimarri Jaya Sai Surya",
+      "lname": "Krishna",
+      "email": "pjssgk@gmail.com",
+      "password": "",
+      "mobile": "0949 097 0451",
+      "address": "6b-1-24, Sanagapappu Bazar",
+      "id": 6
+    },
+    {
+      "fname": "Jaya Sai Surya Gopi Krishna",
+      "lname": "Pamidimarri",
+      "email": "dimarri@gmail.com",
+      "password": "",
+      "mobile": "7671922818",
+      "address": "6b-1-24",
+      "id": 7
+    },
+    {
+      "fname": "asdsd",
+      "lname": "Yamini",
+      "email": "vssyamini11299@gmail.com",
+      "password": "",
+      "mobile": "+918247315059",
+      "address": "Tangellamudi",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "pname": "samsung",
+      "model": "s20",
+      "price": "20000"
+    },
+    {
+      "id": 2,
+      "pname": "Nokia",
+      "model": "G10",
+      "price": "20000"
+    },
+    {
+      "id": 3,
+      "pname": "Realme",
+      "model": "Narzo 20",
+      "price": "20000"
     }
   ]
 }

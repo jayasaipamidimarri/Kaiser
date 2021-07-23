@@ -18,6 +18,7 @@ import { UpdateProductComponent } from './update-product/update-product.componen
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 import { ViewUsersComponent } from './view-users/view-users.component';
 import { UserService } from './services/user.service';
+import { ProductService } from './services/product.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { UserService } from './services/user.service';
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,HttpClientModule,ReactiveFormsModule  ],
-  providers: [MyGaurds,UserService],
+  providers: [MyGaurds,UserService,ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

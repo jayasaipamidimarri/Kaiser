@@ -1,4 +1,23 @@
-<p>
-  Hola {{userName}}
-</p>
-<input type="button" value="Logout" (click)="logout()">
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Product Company</th>
+        <th scope="col">Model</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productList">
+        <td>{{item.id}}</td>
+        <td>{{item.pname}}</td>
+        <td>{{item.model}}</td>
+        <td>{{item.price}}</td>
+        <td><button type="button" class="btn btn-success">Buy</button></td>   
+      </tr>
+    </tbody>
+  </table>
+  <input type="button" value="Logout" (click)="logout()">
+  
+</div>

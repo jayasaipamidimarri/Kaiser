@@ -15,20 +15,20 @@ export class SignInComponent implements OnInit {
 
   checkUser(userRef:any)
   {
-    let user=userRef.user;
+    let email=userRef.email;
     let pass=userRef.pass;
-    if(user=="jai" && pass=="123")
+    if(email=="jayasaipamidimarri@gmail.com" && pass=="123")
     {
       console.log("Login Successfull")
-      console.log(user)
-      sessionStorage.setItem("name",user);
+      console.log(email)
+      sessionStorage.setItem("name",email);
       this.router.navigate(["userdashboard"])
     }
-    else if(user=="admin" && pass=="admin")
+    else if(email=="admin" && pass=="admin")
     {
       console.log("Login Successfull")
-      console.log(user)
-      sessionStorage.setItem("name",user);
+      console.log(email)
+      sessionStorage.setItem("name",email);
       this.router.navigate(["admindashboard"])
     }
     else

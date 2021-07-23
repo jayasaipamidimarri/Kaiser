@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-user-dashboard',
@@ -8,13 +9,18 @@ import { Router } from '@angular/router';
 })
 export class UserDashboardComponent implements OnInit {
   userName:string=""
-  constructor(public router:Router) { }
+  productList={};
+  constructor(public router:Router,private productService:ProductService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     let obj = sessionStorage.getItem("name");
       if(obj!=null){
         this.userName=obj;
+    this.productService.getProductList().subscribe(result=>{
+    this.productList=result;
+    })
       }
+  
   }
   logout()
   {
