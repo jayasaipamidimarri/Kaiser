@@ -29,7 +29,7 @@ export class AddCustomerComponent implements OnInit {
     this.router.navigate(["signin"])
     // console.warn(this.addUser.value)
     this.userService.saveUserData(this.addUser.value).subscribe((result)=>{
-      console.warn("result is here",result)
+      console.warn("result is here",result,this.addUser)
     })
   }
   // registerUser(newUserRef:any)

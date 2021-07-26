@@ -9,7 +9,7 @@ import { UserService } from '../services/user.service';
 export class ViewUsersComponent implements OnInit {
 
   constructor(private userService:UserService) { }
-  userslist={};
+  userslist:any=[];
   ngOnInit():void {
     this.userService.getuserslist().subscribe(result=>{
       //console.warn(result)

@@ -17,10 +17,11 @@
         <td>{{item.pname}}</td>
         <td>{{item.model}}</td>
         <td>{{item.price}}</td>
-        <td><i class="far fa-edit"></i></td>
+        <td><a routerLink="updateoneproduct/{{item.id}}"><i class="far fa-edit"></i></a></td>
       </tr>
     </tbody>
   </table>
   <input type="button" value="Logout" (click)="logout()">
   
 </div>
+<router-outlet></router-outlet>

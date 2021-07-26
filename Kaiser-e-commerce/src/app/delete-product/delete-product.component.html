@@ -17,7 +17,7 @@
         <td>{{item.pname}}</td>
         <td>{{item.model}}</td>
         <td>{{item.price}}</td>
-        <td><i class="fas fa-trash-alt"></i></td>
+        <td><i (click)="deleteProduct(item.id)" class="fa fa-trash"></i></td>
       </tr>
     </tbody>
   </table>

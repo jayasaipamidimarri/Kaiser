@@ -7,13 +7,21 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./delete-product.component.css']
 })
 export class DeleteProductComponent implements OnInit {
-  productList={};
+  productList:any=[];
   constructor(private productService:ProductService) { }
 
-  ngOnInit():void {
+  ngOnInit():void 
+  {
     this.productService.getProductList().subscribe(result=>{
       this.productList=result;
-  }
-
+  })
+}
+deleteProduct(item)
+{
+  this.productList.splice(item,1);
+  this.productService.deleteProductData(item).subscribe((result)=>{
+    console.warn(result)
+  })
+}
 
 }

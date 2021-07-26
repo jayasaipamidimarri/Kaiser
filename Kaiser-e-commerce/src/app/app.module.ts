@@ -19,6 +19,7 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
 import { ViewUsersComponent } from './view-users/view-users.component';
 import { UserService } from './services/user.service';
 import { ProductService } from './services/product.service';
+import { UpdateOneProductComponent } from './update-one-product/update-one-product.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +33,21 @@ import { ProductService } from './services/product.service';
     AddProductComponent,
     UpdateProductComponent,
     DeleteProductComponent,
-    ViewUsersComponent
+    ViewUsersComponent,
+    UpdateOneProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,HttpClientModule,ReactiveFormsModule  ],
-  providers: [MyGaurds,UserService,ProductService],
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
+
+  providers: [MyGaurds,
+    UserService,
+    ProductService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

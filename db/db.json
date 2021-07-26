@@ -37,15 +37,6 @@
     {
       "fname": "Pamidimarri Jaya Sai Surya",
       "lname": "Krishna",
-      "email": "jayasaipamidimarri@gmail.com",
-      "password": "123",
-      "mobile": "+917671922818",
-      "address": "6b-1-24",
-      "id": 5
-    },
-    {
-      "fname": "Pamidimarri Jaya Sai Surya",
-      "lname": "Krishna",
       "email": "pjssgk@gmail.com",
       "password": "",
       "mobile": "0949 097 0451",
@@ -69,26 +60,56 @@
       "mobile": "+918247315059",
       "address": "Tangellamudi",
       "id": 8
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "address": "",
+      "id": 9
+    },
+    {
+      "fname": "aa",
+      "lname": "bb",
+      "email": "gdygger",
+      "password": "etdrtgd",
+      "mobile": "3535",
+      "address": "trtgrtg",
+      "id": 10
+    },
+    {
+      "fname": "gfdg",
+      "lname": "dfgdfg",
+      "email": "gdfg",
+      "password": "dgdr",
+      "mobile": "dhdhd",
+      "address": "gdf",
+      "id": 11
+    },
+    {
+      "fname": "Veccha Siva",
+      "lname": "Yamini",
+      "email": "vssyamini11299@gmail.com",
+      "password": "",
+      "mobile": "+918247315059",
+      "address": "Tangellamudi",
+      "id": 12
     }
   ],
   "products": [
     {
-      "id": 1,
-      "pname": "samsung",
-      "model": "s20",
-      "price": "20000"
+      "pname": "nokia",
+      "model": "k20",
+      "price": "20006",
+      "id": 1
     },
     {
-      "id": 2,
-      "pname": "Nokia",
-      "model": "G10",
-      "price": "20000"
-    },
-    {
-      "id": 3,
-      "pname": "Realme",
-      "model": "Narzo 20",
-      "price": "20000"
+      "pname": "moto",
+      "model": "e4 plus",
+      "price": "10012",
+      "id": 2
     }
   ]
 }

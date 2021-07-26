@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from '../models/user.model';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -8,7 +10,9 @@ import { Router } from '@angular/router';
 })
 export class SignInComponent implements OnInit {
   msg:string=""
-  constructor(public router:Router) { }
+  user=new User;
+  user1=new User;
+  constructor(public router:Router,public userService:UserService) { }
 
   ngOnInit(): void {
   }
@@ -37,4 +41,29 @@ export class SignInComponent implements OnInit {
       this.msg="Username or password not found";
     }
   }
+    // checkUser1(userRef:any)
+    // {
+    //   let useremail=userRef.email;
+    //   let pass=userRef.pass;
+
+    //   this.user.email=useremail;
+    //   this.user.password=pass;
+      
+    //   this.userService.checkLogin(this.user).subscribe(obj=>{
+    //     if(obj==null)
+    //     {
+    //       this.msg="Please Enter valid username or password"
+    //     }
+    //     else
+    //     {
+    //       this.user1=obj;
+    //       console.log("comp-user1",this.user1)
+    //       //sessionStorage.setItem("user",JSON.stringify(obj));
+    //       sessionStorage.setItem(this.user1.email,this.user1.password);
+    //       console.log("comp-user1",this.user1)
+    //       console.log("comp-user",this.user)
+    //       this.router.navigate(["userdashboard"])
+    //     }
+    //   })
+    // }
 }

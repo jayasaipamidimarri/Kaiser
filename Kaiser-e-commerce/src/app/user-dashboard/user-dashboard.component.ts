@@ -9,7 +9,7 @@ import { ProductService } from '../services/product.service';
 })
 export class UserDashboardComponent implements OnInit {
   userName:string=""
-  productList={};
+  productList:any=[];
   constructor(public router:Router,private productService:ProductService) { }
 
   ngOnInit(): void {
